@@ -12,6 +12,7 @@ from decorator import InQueue, server_function, pool_function, process_function,
 from queue_loop import QueueLoop
 from fuzzy_list import FuzzyList
 from log import log, mutex
+from file_finder import filefinder
 from yiyan_server import Yiyan
 
 def send(obj):
