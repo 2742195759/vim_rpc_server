@@ -60,7 +60,7 @@ def GetSearchFiles(directory):
 def GetSearchFilesFromCommand(find_cmd):
     import subprocess
     child = subprocess.Popen(f"{find_cmd}", shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE, universal_newlines=True)
-    print ("[FileFinder]:", find_cmd)
+    log ("[FileFinder]:", find_cmd)
     files = []
     for line in child.stdout.readlines():
         line = line.strip()

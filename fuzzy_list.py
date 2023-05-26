@@ -18,7 +18,7 @@ class FuzzyList:
     @server_function
     def set_items(self, name, items): 
         self.lists_dict[name] = items
-        print(f"[FileFinder] set `{name}` with length:", len(items))
+        log(f"[FileFinder] set `{name}` with length:", len(items))
         return None
 
     @server_function
@@ -103,7 +103,7 @@ def test_main():
     search = "it"
     inputs = ["xxxx", "hhhh", "getit"] * 100000
     f.files = inputs
-    print(f.search(1, search))
+    #log(f.search(1, search))
 
 if __name__ == "__main__":
     test_main()
