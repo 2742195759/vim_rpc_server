@@ -18,15 +18,7 @@ class FuzzyList:
     @server_function
     def set_items(self, name, items): 
         self.lists_dict[name] = items
-        #def filt(filepath):
-            #basename = os.path.basename(filepath).lower()
-            #if basename.startswith("."): return False
-            #if basename.endswith(".o"): return False
-            #if basename.endswith(".pyc"): return False
-            #if basename.endswith(".swp"): return False
-            #return True
-        #self.files = list(filter(filt, self.files))
-        log(f"[FileFinder] set `{name}` with length:", len(items))
+        print(f"[FileFinder] set `{name}` with length:", len(items))
         return None
 
     @server_function

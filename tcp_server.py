@@ -26,7 +26,9 @@ from threading import Thread
 from queue_loop import QueueLoop
 from queue_loop import QueueLoop
 from fuzzy_list import FuzzyList
+from file_finder import filefinder
 from decorator import InQueue
+from remote_fs import remotefs
 
 try:
     # Python 3

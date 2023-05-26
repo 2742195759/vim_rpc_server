@@ -8,7 +8,6 @@ import os
 from threading import Lock, Thread
 import multiprocessing as mp
 from functools import partial
-from file_finder import fuzzy_match_pool
 from decorator import InQueue, server_function, pool_function, process_function, default_map_fn, time_consume
 from queue_loop import QueueLoop
 from fuzzy_list import FuzzyList
